@@ -10,6 +10,10 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
+    "paths": {
+      "@config/*": ["src/config/*"],
+      "@types": ["src/types/index.d.ts"],
+    },
     "incremental": true,
     "skipLibCheck": true,
     "strict": true,
