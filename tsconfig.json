@@ -13,6 +13,17 @@
     "paths": {
       "@config/*": ["src/config/*"],
       "@types": ["src/types/index.d.ts"],
+      "@modules/*": [
+        "src/modules/admin/*",
+        "src/modules/marketer/*",
+        "src/modules/client/*"
+      ],
+      "@entities/*": [
+        "src/modules/admin/entities/*",
+        "src/modules/marketer/entities/*",
+        "src/modules/client/entities/*"
+      ],
+      "@enums/*": ["src/common/enums/*"]
     },
     "incremental": true,
     "skipLibCheck": true,

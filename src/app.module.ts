@@ -3,6 +3,9 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import configuration from '@config/configuration';
 import { DatabaseConfig } from '@types';
+import { AdminModule } from '@modules/admin.module';
+import { MarketerModule } from '@modules/marketer.module';
+import { ClientModule } from '@modules/client.module';
 
 @Module({
   imports: [
@@ -23,6 +26,9 @@ import { DatabaseConfig } from '@types';
       },
       inject: [ConfigService],
     }),
+    AdminModule,
+    MarketerModule,
+    ClientModule,
   ],
   controllers: [],
   providers: [],
